@@ -1,5 +1,5 @@
 FROM ubuntu:bionic
-LABEL vendor="drive/youtube-dl-api" maintainer="cedric.baidai@veone.net" version="1.0.0"
+LABEL vendor="cedrickoka/youtube-dl" maintainer="okacedrick@gmail.com" version="1.0.0"
 
 # Fix debconf warnings upon build
 ARG DEBIAN_FRONTEND=noninteractive
