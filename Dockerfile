@@ -12,6 +12,8 @@ RUN wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube
 	&& chmod a+rx /usr/local/bin/youtube-dl \
 	&& hash -r
 
+ARG DATA_PATH=/opt/data/youtube-dl
+
 COPY youtube-dl.conf /etc/youtube-dl.conf
 RUN chmod 0755 /etc/youtube-dl.conf
 
